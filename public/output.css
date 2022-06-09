@@ -1884,6 +1884,19 @@ html {
   cursor: auto;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: var(--navbar-padding, 0.5rem);
+  min-height: 4rem;
+  width: 100%;
+}
+
+:where(.navbar > *) {
+  display: inline-flex;
+  align-items: center;
+}
+
 .select {
   display: inline-flex;
   flex-shrink: 0;
@@ -2125,6 +2138,23 @@ html {
   outline: 2px solid 0 0 2px currentColor;
 }
 
+.btn-ghost {
+  border-width: 1px;
+  border-color: transparent;
+  background-color: transparent;
+  color: currentColor;
+}
+
+.btn-ghost:hover, .btn-ghost.btn-active {
+  --tw-border-opacity: 0;
+  background-color: hsl(var(--bc) / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+}
+
+.btn-ghost:focus-visible {
+  outline: 2px solid 0 0 2px currentColor;
+}
+
 .btn-outline.btn-primary {
   --tw-text-opacity: 1;
   color: hsl(var(--p) / var(--tw-text-opacity));
@@ -2287,6 +2317,10 @@ html {
 
 .drawer-toggle:focus-visible ~ .drawer-content .drawer-button.btn-secondary {
   outline: 2px solid hsl(var(--s));
+}
+
+.drawer-toggle:focus-visible ~ .drawer-content .drawer-button.btn-ghost {
+  outline: 2px solid currentColor;
 }
 
 .link:focus {
@@ -2471,6 +2505,10 @@ html {
   flex: 1 1 0%;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -2523,6 +2561,26 @@ html {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-base-300 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
+}
+
+.bg-base-200 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b2, var(--b1)) / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -2553,6 +2611,15 @@ html {
 
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.normal-case {
+  text-transform: none;
 }
 
 .shadow-xl {
