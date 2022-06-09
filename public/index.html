@@ -6,13 +6,102 @@
     <link href="output.css" rel="stylesheet">
 </head>
 <body>
-<div class="container bg-gray-800 mt-5 pt-5 pb-5">
-    <button class="btn btn-primary">Submit</button>
-    <button class="btn btn-secondary">Cancel</button>
-</div>
+    <div class="container bg-gray-900 mt-5 pt-5 pb-5" data-theme="dark">
+        <span class="badge">Dark theme</span>
+        <button class="btn btn-primary">Submit</button>
+        <button class="btn btn-secondary">Cancel</button>
+    </div>
 
-<div class="container bg-gray-600 mt-5 pt-5 pb-5">
-    <button class="btn w-64 rounded-full">Round Submit</button>
-</div>
+    <div class="container bg-gray-900 mt-5 pt-5 pb-5" data-theme="retro">
+        <span class="badge">Retro theme</span>
+        <button class="btn w-64 rounded-full">Round Submit</button>
+    </div>
+
+    <div class="container bg-gray-900 mt-5 pt-5 pb-5" data-theme="cyberpunk">
+        <span class="badge">Cyberpunk theme</span>
+        <select class="select select-primary w-full max-w-xs">
+            <option disabled selected>What is your favourite theme?</option>
+            <option>light</option>
+            <option>dark</option>
+            <option>cupcake</option>
+            <option>bumblebee</option>
+            <option>emerald</option>
+            <option>corporate</option>
+            <option>synthwave</option>
+            <option>retro</option>
+            <option>cyberpunk</option>
+            <option>valentine</option>
+            <option>halloween</option>
+            <option>garden</option>
+            <option>forest</option>
+            <option>aqua</option>
+            <option>lofi</option>
+            <option>pastel</option>
+            <option>fantasy</option>
+            <option>wireframe</option>
+            <option>black</option>
+            <option>luxury</option>
+            <option>dracula</option>
+            <option>cmyk</option>
+            <option>autumn</option>
+            <option>business</option>
+            <option>acid</option>
+            <option>lemonade</option>
+            <option>night</option>
+            <option>coffee</option>
+            <option>winter</option>
+        </select>
+        <button class="btn btn-primary">Submit</button>
+    </div>
+
+    <div class="container bg-gray-900 mt-5 pt-5 pb-5">
+        <span class="badge mb-5">Various themes</span>
+        <div class="flex">
+            <div class="bg-gray-700 px-5 py-5" data-theme="dracula">
+                <span class="badge">Dracula theme</span>
+                <div class="card w-96 bg-base-100 shadow-xl mt-5 mb-5">
+                    <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            </div>
+
+            <div class="bg-gray-500 px-5 py-5" data-theme="forest">
+                <span class="badge">Forest theme</span>
+                <div class="card w-96 bg-base-100 shadow-xl mt-5 mb-5">
+                    <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            </div>
+
+            <div class="bg-gray-300 px-5 py-5" data-theme="lemonade">
+                <span class="badge">Lemonade theme</span>
+                <div class="card w-96 bg-base-100 shadow-xl mt-5 mb-5">
+                    <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
