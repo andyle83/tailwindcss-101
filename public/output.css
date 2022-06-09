@@ -1748,6 +1748,12 @@ html {
   pointer-events: none;
 }
 
+.btn-square {
+  height: 3rem;
+  width: 3rem;
+  padding: 0px;
+}
+
 .btn.loading, .btn.loading:hover {
   pointer-events: none;
 }
@@ -2448,6 +2454,30 @@ html {
   padding-right: 1rem;
 }
 
+.btn-square:where(.btn-xs) {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0px;
+}
+
+.btn-square:where(.btn-sm) {
+  height: 2rem;
+  width: 2rem;
+  padding: 0px;
+}
+
+.btn-square:where(.btn-md) {
+  height: 3rem;
+  width: 3rem;
+  padding: 0px;
+}
+
+.btn-square:where(.btn-lg) {
+  height: 4rem;
+  width: 4rem;
+  padding: 0px;
+}
+
 .card-compact .card-body {
   padding: 1rem;
   font-size: 0.875rem;
@@ -2473,6 +2503,21 @@ html {
   margin-bottom: 0.5rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -2481,8 +2526,16 @@ html {
   margin-bottom: 1.25rem;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .w-64 {
@@ -2497,12 +2550,20 @@ html {
   width: 24rem;
 }
 
+.w-5 {
+  width: 1.25rem;
+}
+
 .max-w-xs {
   max-width: 20rem;
 }
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.flex-none {
+  flex: none;
 }
 
 .flex-wrap {
@@ -2579,6 +2640,10 @@ html {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.stroke-current {
+  stroke: currentColor;
 }
 
 .p-2 {
