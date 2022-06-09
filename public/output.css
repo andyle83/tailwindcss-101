@@ -3825,6 +3825,14 @@ html {
   .md\:flex {
     display: flex;
   }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3839,5 +3847,9 @@ html {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 }
