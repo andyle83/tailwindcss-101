@@ -14,8 +14,11 @@
                 <a class="btn btn-ghost normal-case text-xl">Marketplace</a>
             </div>
             <div class="flex-none gap-2">
-                <div class="form-control w-64">
-                    <input type="text" placeholder="Search your product" class="input input-bordered" />
+                <div class="form-control w-64 relative">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                        <svg class="w-6 h-6" fill="none" stroke="gray" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </span>
+                    <input type="text" placeholder="Search your product" class="input input-bordered pl-10 pr-4" />
                 </div>
                 <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -23,12 +26,18 @@
                             <img src="https://api.lorem.space/image/face?hash=33791" />
                         </div>
                     </label>
-                    <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 w-52">
+                    <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-lg w-52">
                         <li>
                             <a class="justify-between">
-                                Profile
-                                <span class="badge badge-primary">Update</span>
+                                Wallet
+                                <span class="badge badge-primary">$30 cUSD</span>
                             </a>
+                        </li>
+                        <li>
+                            <a>Settings</a>
+                        </li>
+                        <li>
+                            <a>Logout</a>
                         </li>
                     </ul>
                 </div>
