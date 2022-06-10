@@ -7,9 +7,9 @@
     <title>DaisyUI Collection</title>
 </head>
 <body>
-    <div class="drawer drawer-mobile">
+    <div class="drawer">
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content">
+        <div class="drawer-content flex flex-col">
             <!--Navigation menu -->
             <nav class="container">
                 <div class="navbar bg-base-300">
@@ -126,16 +126,14 @@
                 </div>
             </footer>
         </div>
-        <div class="drawer-side">
+        <div class="drawer-side hidden md:block">
             <label for="my-drawer-3" class="drawer-overlay"></label>
             <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
                 <!-- Sidebar content here -->
                 <li><a>New</a></li>
                 <li><a>Business</a></li>
                 <li><a>Support</a></li>
-
             </ul>
-
         </div>
     </div>
 </body>

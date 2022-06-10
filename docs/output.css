@@ -3602,6 +3602,10 @@ body[dir="rtl"] .checkbox:checked,
   grid-auto-flow: column;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -3753,9 +3757,23 @@ body[dir="rtl"] .checkbox:checked,
   background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:hidden {
