@@ -9,9 +9,10 @@
 <body>
     <div class="drawer">
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content flex flex-col">
-            <!--Navigation menu -->
-            <nav class="container" style="max-width: 100%;">
+        <div class="drawer-content">
+            <div class="container bg-base-200 flex flex-col h-screen">
+                <!--Navigation menu -->
+                <nav>
                 <div class="navbar bg-base-300">
                     <div class="navbar-start">
                         <div class="flex-none md:hidden">
@@ -71,8 +72,8 @@
                 </div>
             </nav>
 
-            <!--Carousel items-->
-            <section class="container relative" style="max-width: 100%;">
+                <!--Carousel items-->
+                <section class="relative">
                 <div class="carousel w-full">
                     <div id="item1" class="carousel-item">
                         <!--Need to correct height in desktop screen-->
@@ -92,15 +93,15 @@
                 </div>
             </section>
 
-            <!--Categories-->
-            <section class="container" style="max-width: 100%;">
-                <div class="tabs bg-base-200 flex justify-around p-3 rounded-none">
+                <!--Categories-->
+                <section class="flex-grow">
+                    <div class="tabs bg-base-200 flex justify-around p-3 rounded-none">
                     <a class="tab tab-bordered border-secondary">Fashion</a>
                     <a class="tab">Books</a>
                     <a class="tab">Accessories</a>
                     <a class="tab">Digital</a>
                 </div>
-                <div class="flex flex-wrap justify-center lg:justify-between">
+                    <div class="flex flex-wrap justify-center lg:justify-between">
                     <div class="bg-gray-200 px-10" data-theme="light">
                         <div class="card w-full bg-base-100 shadow-xl mt-5 mb-5 rounded-none">
                             <img src="https://api.lorem.space/image/fashion?w=400&h=225" alt="Fashion" />
@@ -111,12 +112,12 @@
                         </div>
                     </div>
                 </div>
-            </section>
+                </section>
 
-            <!--"Primary" products-->
+                <!--"Primary" products-->
 
-            <!--Footer-->
-            <footer class="footer footer-center p-2 text-base-content gap-4 bg-base-200" data-theme="light">
+                <!--Footer-->
+                <footer class="footer footer-center p-2 text-base-content gap-4 bg-base-200" data-theme="light">
                 <div>
                     Copyright © 2022 - DaisyUI Collection
                 </div>
@@ -126,6 +127,7 @@
                     <a><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
                 </div>
             </footer>
+            </div>
         </div>
 
         <!--Sidebar-->
