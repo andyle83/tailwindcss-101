@@ -3903,6 +3903,10 @@ body[dir="rtl"] .checkbox:checked,
   justify-content: space-around;
 }
 
+.justify-items-end {
+  justify-items: end;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
