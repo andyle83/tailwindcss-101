@@ -4031,6 +4031,14 @@ body[dir="rtl"] .checkbox:checked,
   fill: #9ca3af;
 }
 
+.fill-transparent {
+  fill: transparent;
+}
+
+.stroke-white {
+  stroke: #fff;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
