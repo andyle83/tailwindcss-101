@@ -3702,6 +3702,14 @@ body[dir="rtl"] .checkbox:checked,
   border-bottom-left-radius: unset;
 }
 
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -3721,6 +3729,22 @@ body[dir="rtl"] .checkbox:checked,
 
 .bottom-0 {
   bottom: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
 }
 
 .mt-3 {
@@ -3779,6 +3803,10 @@ body[dir="rtl"] .checkbox:checked,
   height: 1.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -3809,6 +3837,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .w-80 {
   width: 20rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .max-w-md {
@@ -3941,6 +3973,62 @@ body[dir="rtl"] .checkbox:checked,
 
 .fill-current {
   fill: currentColor;
+}
+
+.fill-teal-50 {
+  fill: #f0fdfa;
+}
+
+.fill-blue-500 {
+  fill: #3b82f6;
+}
+
+.fill-purple-700 {
+  fill: #7e22ce;
+}
+
+.fill-violet-100 {
+  fill: #ede9fe;
+}
+
+.fill-violet-400 {
+  fill: #a78bfa;
+}
+
+.fill-violet-700 {
+  fill: #6d28d9;
+}
+
+.fill-pink-700 {
+  fill: #be185d;
+}
+
+.fill-pink-500 {
+  fill: #ec4899;
+}
+
+.fill-pink-400 {
+  fill: #f472b6;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.fill-inherit {
+  fill: inherit;
+}
+
+.fill-gray-50 {
+  fill: #f9fafb;
+}
+
+.fill-gray-200 {
+  fill: #e5e7eb;
+}
+
+.fill-gray-400 {
+  fill: #9ca3af;
 }
 
 .p-2 {
