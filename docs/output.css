@@ -3847,6 +3847,18 @@ body[dir="rtl"] .checkbox:checked,
   width: 2rem;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -4140,6 +4152,11 @@ body[dir="rtl"] .checkbox:checked,
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-pink-400 {
+  --tw-text-opacity: 1;
+  color: rgb(244 114 182 / var(--tw-text-opacity));
 }
 
 .text-opacity-25 {
