@@ -1633,15 +1633,11 @@ html {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 0rem;
-  padding-left: 0rem;
 }
 
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
-    padding-right: 2rem;
-    padding-left: 2rem;
   }
 }
 
@@ -1654,24 +1650,18 @@ html {
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
-    padding-right: 4rem;
-    padding-left: 4rem;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding-right: 5rem;
-    padding-left: 5rem;
   }
 }
 
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
-    padding-right: 6rem;
-    padding-left: 6rem;
   }
 }
 
@@ -1937,25 +1927,6 @@ html {
   border-color: hsl(var(--bc) / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
   border-radius: var(--rounded-btn, 0.5rem);
-}
-
-.divider {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-self: stretch;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  height: 1rem;
-  white-space: nowrap;
-}
-
-.divider:before,
-  .divider:after {
-  content: "";
-  flex-grow: 1;
-  height: 0.125rem;
-  width: 100%;
 }
 
 .drawer {
@@ -2616,26 +2587,6 @@ html {
   outline-offset: 2px;
 }
 
-.btn-primary {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--p) / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--p) / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(var(--pc) / var(--tw-text-opacity));
-}
-
-.btn-primary:hover, .btn-primary.btn-active {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--pf, var(--p)) / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
-}
-
-.btn-primary:focus-visible {
-  outline: 2px solid hsl(var(--p));
-}
-
 .btn-secondary {
   --tw-border-opacity: 1;
   border-color: hsl(var(--s) / var(--tw-border-opacity));
@@ -2681,20 +2632,6 @@ html {
 
 .btn-ghost:focus-visible {
   outline: 2px solid 0 0 2px currentColor;
-}
-
-.btn-outline.btn-primary {
-  --tw-text-opacity: 1;
-  color: hsl(var(--p) / var(--tw-text-opacity));
-}
-
-.btn-outline.btn-primary:hover {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--pf, var(--p)) / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(var(--pc) / var(--tw-text-opacity));
 }
 
 .btn-outline.btn-secondary {
@@ -2882,20 +2819,6 @@ body[dir="rtl"] .checkbox {
 body[dir="rtl"] .checkbox:checked,
     body[dir="rtl"] .checkbox[checked="true"] {
   background-image: linear-gradient(45deg, transparent 65%, hsl(var(--chkbg)) 65.99%), linear-gradient(-45deg, transparent 75%, hsl(var(--chkbg)) 75.99%), linear-gradient(45deg, hsl(var(--chkbg)) 40%, transparent 40.99%), linear-gradient(-45deg, hsl(var(--chkbg)) 30%, hsl(var(--chkfg)) 30.99%, hsl(var(--chkfg)) 40%, transparent 40.99%), linear-gradient(45deg, hsl(var(--chkfg)) 50%, hsl(var(--chkbg)) 50.99%);
-}
-
-.divider:before {
-  background-color: hsl(var(--bc) / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.1;
-}
-
-.divider:after {
-  background-color: hsl(var(--bc) / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.1;
-}
-
-.divider:not(:empty) {
-  gap: 1rem;
 }
 
 .drawer.drawer-end > .drawer-toggle:checked ~ .drawer-content {
@@ -3506,11 +3429,6 @@ body[dir="rtl"] .checkbox:checked,
   margin-bottom: 0.75rem;
 }
 
-.menu-vertical :where(li.bordered > *) {
-  border-left-width: 4px;
-  border-bottom-width: 0px;
-}
-
 .menu-horizontal :where(li.bordered > *) {
   border-left-width: 0px;
   border-bottom-width: 4px;
@@ -3584,10 +3502,6 @@ body[dir="rtl"] .checkbox:checked,
   margin-bottom: 1.25rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
 .flex {
   display: flex;
 }
@@ -3608,16 +3522,8 @@ body[dir="rtl"] .checkbox:checked,
   height: 1.5rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .w-5 {
   width: 1.25rem;
-}
-
-.w-52 {
-  width: 13rem;
 }
 
 .w-6 {
@@ -3636,8 +3542,26 @@ body[dir="rtl"] .checkbox:checked,
   width: 2.5rem;
 }
 
+.w-52 {
+  width: 13rem;
+}
+
 .w-80 {
   width: 20rem;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-max {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .flex-none {
@@ -3684,14 +3608,6 @@ body[dir="rtl"] .checkbox:checked,
   gap: 1rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
-}
-
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -3727,11 +3643,6 @@ body[dir="rtl"] .checkbox:checked,
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .fill-current {
@@ -3793,24 +3704,8 @@ body[dir="rtl"] .checkbox:checked,
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .drop-shadow-md {
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.saturate-50 {
-  --tw-saturate: saturate(.5);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.sepia {
-  --tw-sepia: sepia(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -3824,23 +3719,9 @@ body[dir="rtl"] .checkbox:checked,
   background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-
   .md\:block {
     display: block;
-  }
-
-  .md\:flex {
-    display: flex;
   }
 
   .md\:hidden {
@@ -3852,10 +3733,6 @@ body[dir="rtl"] .checkbox:checked,
   .lg\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-
-  .lg\:hidden {
-    display: none;
   }
 
   .lg\:justify-between {
