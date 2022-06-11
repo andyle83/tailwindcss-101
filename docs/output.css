@@ -3811,6 +3811,14 @@ body[dir="rtl"] .checkbox:checked,
   height: 2.5rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -3857,6 +3865,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-md {
@@ -3991,6 +4003,10 @@ body[dir="rtl"] .checkbox:checked,
   --tw-bg-opacity: 0.6;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -4057,6 +4073,11 @@ body[dir="rtl"] .checkbox:checked,
 
 .stroke-white {
   stroke: #fff;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {
