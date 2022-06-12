@@ -4189,6 +4189,10 @@ body[dir="rtl"] .checkbox:checked,
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -4257,9 +4261,19 @@ body[dir="rtl"] .checkbox:checked,
   stroke: #fff;
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-2 {
@@ -4371,6 +4385,11 @@ body[dir="rtl"] .checkbox:checked,
   color: rgb(244 114 182 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-opacity-25 {
   --tw-text-opacity: 0.25;
 }
@@ -4412,6 +4431,16 @@ body[dir="rtl"] .checkbox:checked,
   background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:h-40 {
+    height: 10rem;
+  }
+
+  .sm\:h-44 {
+    height: 11rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -4419,6 +4448,10 @@ body[dir="rtl"] .checkbox:checked,
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-36 {
+    height: 9rem;
   }
 }
 
