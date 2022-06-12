@@ -3843,6 +3843,14 @@ body[dir="rtl"] .checkbox:checked,
   height: 5rem;
 }
 
+.h-0 {
+  height: 0px;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -3919,6 +3927,34 @@ body[dir="rtl"] .checkbox:checked,
   grid-auto-flow: column;
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -3947,12 +3983,20 @@ body[dir="rtl"] .checkbox:checked,
   justify-items: end;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .overflow-y-auto {
@@ -4289,7 +4333,15 @@ body[dir="rtl"] .checkbox:checked,
     margin-right: 1rem;
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
   }
 }
