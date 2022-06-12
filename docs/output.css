@@ -3806,6 +3806,14 @@ body[dir="rtl"] .checkbox:checked,
   margin: 0.75rem;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -4313,6 +4321,11 @@ body[dir="rtl"] .checkbox:checked,
   padding-right: 0.5rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -4439,6 +4452,24 @@ body[dir="rtl"] .checkbox:checked,
   .sm\:h-44 {
     height: 11rem;
   }
+
+  .sm\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .sm\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -4453,12 +4484,44 @@ body[dir="rtl"] .checkbox:checked,
   .md\:h-36 {
     height: 9rem;
   }
+
+  .md\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .lg\:flex-1 {
+    flex: 1 1 0%;
   }
 
   .lg\:grid-cols-2 {
@@ -4471,5 +4534,10 @@ body[dir="rtl"] .checkbox:checked,
 
   .lg\:justify-around {
     justify-content: space-around;
+  }
+
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
