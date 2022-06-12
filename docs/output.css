@@ -4130,6 +4130,18 @@ body[dir="rtl"] .checkbox:checked,
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
+.bg-primary\/75 {
+  background-color: hsl(var(--p) / 0.75);
+}
+
+.bg-primary\/50 {
+  background-color: hsl(var(--p) / 0.5);
+}
+
+.bg-primary\/25 {
+  background-color: hsl(var(--p) / 0.25);
+}
+
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
